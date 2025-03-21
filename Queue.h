@@ -18,10 +18,8 @@ private:
     int count;
 
 public:
-    // Constructor
     Queue() : front(nullptr), back(nullptr), count(0) {}
 
-    // Copy Constructor
     Queue(const Queue<Type>& q) {
         front = nullptr;
         back = nullptr;
@@ -33,7 +31,6 @@ public:
         }
     }
 
-    // Assignment Operator
     Queue<Type>& operator=(const Queue<Type>& q) {
         if (this != &q) {
             clear();
@@ -93,7 +90,6 @@ public:
         }
     }
 
-    // Stream operator
     friend ostream& operator<<(ostream& out, const Queue<Type>& q) {
         Node* temp = q.front;
         while (temp != nullptr) {
