@@ -2,6 +2,7 @@
 #define QUEUE_H
 
 #include <iostream>
+#include <climits> // Add this line
 using namespace std;
 
 template <class Type>
@@ -106,4 +107,4 @@ public:
     }
 };
 
-#endif 
+#endif
